@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispatch Details</title>
+    <link href='https://fonts.googleapis.com/css?family=Libre Caslon Text' rel='stylesheet'>
+    <script>
+      function myFunction() {
+       /*  var result;
+            var name = document.getElementById("product name").value;
+            switch(name) {
+                case '1':
+                    result = "Smart Phone";
+                    break;
+                case '2':
+                    result = "iPhone";
+                    break;
+                default:
+                    result = "Laptop";
+            }*/
+            document.getElementById("product name").value = "Smart Phone";
+            
+            document.getElementById("shop name").value = "Android Store";
+            document.getElementById("total price").value = "40000";
+            document.getElementById("dispatch status").value = "Delivered";
+        }
+    </script>
+
+    <style>
+        body {
+    font-family: 'Libre Caslon Text';font-size: 16px;
+}
+        .locate {
+            background-color: #D3D3D3;
+            padding: 0.5%;
+        }
+
+        .sel {
+            width: 50%;
+            padding: 0.5%;
+            margin-bottom: 1%;
+            margin-left: 50%;
+            border-radius: 4%;
+            box-sizing: border-box;
+        }
+
+        .local {
+            background-color: white;
+        }
+
+        .button {
+            border: none;
+            color: white;
+            background-color: #00246B;
+            padding: 8px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin: auto;
+            display: block;
+
+        }
+
+        .button:hover {
+            background-color: red;
+            color: white;
+        }
+
+
+        /*For mobile view*/
+        @media only screen and (max-width: 600px) {
+            .local {
+                background: white;
+            }
+        }
+
+        /*Tablet view*/
+        @media only screen and (min-width: 768px) {
+            .local {
+                background: white;
+            }
+
+        }
+
+        /*Desktop view*/
+        @media only screen and (min-width: 1200px) {
+            .local {
+                background: white;
+            }
+
+        }
+
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Libre Caslon Text;
+}
+
+/* Css for nav and side bar */
+#navbar {
+  background-color: #00246b;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  height: 80px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.6fr 3fr 1fr;
+}
+.nav-logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-logo {
+  width: 167px;
+  height: 49.75px;
+  margin-left: 10px;
+}
+.nav-item-div {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr 0.6fr;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.nav-link-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-btn-div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.nav-btn {
+  background-color: #1e1e1e;
+  margin-right: 10px;
+  width: 119px;
+  height: 44px;
+  border-radius: 10px;
+}
+.nav-btn a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.nav-btn-div .menu-icon {
+  width: 50px;
+  height: 50px;
+  color: white;
+  display: none;
+}
+
+#side-menu {
+  width: 250px;
+  height: 420px;
+  background-color: #00246b;
+  border-bottom-left-radius: 10px;
+  box-shadow: 5px 0px 0px rgba(0, 0, 0, 0.5);
+  float: right;
+  display: none;
+}
+#side-menu .side-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#side-menu .close-menu-icon {
+  height: 30px;
+  width: 30px;
+}
+#side-menu .side-menu-nav-btn {
+  background-color: #1e1e1e;
+  width: 119px;
+  height: 44px;
+  border-radius: 10px;
+}
+#side-menu .side-menu-nav-btn a {
+  text-decoration: none;
+  color: white;
+}
+.side-menu-nav-link {
+  margin: 10px;
+}
+
+.main-div {
+  height: 500px;
+  width: 100%;
+}
+/* end of css for nav and side bar */
+
+/* css for footer */
+#footer {
+  width: 100%;
+  height: 262px;
+}
+.footer-first {
+  width: 100%;
+  height: 167px;
+  background-color: #1e1e1e;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-second {
+  width: 100%;
+  height: 95px;
+  background-color: #00246b;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.footer-address {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer-address img {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+}
+.footer-links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.footer-links p {
+  margin-right: 40px;
+}
+.footer-second .info {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.footer-second .info p {
+  margin-left: 13px;
+}
+
+.footer-second .info p span {
+  font-size: 10px;
+  margin-top: 10px;
+}
+.footer-second .social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.footer-second .social .social-icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+/* end of css for footer */
+
+@media (max-width: 949px) {
+  .nav-btn-div .menu-icon {
+    display: block;
+    margin-right: 10px;
+  }
+  .nav-link-div {
+    display: none;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 950px) {
+  #side-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 837px) {
+  .footer-first {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 272px;
+  }
+  .footer-address {
+    justify-content: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+  }
+  .footer-links p {
+    margin: 10px;
+  }
+  .footer-address img {
+    margin-right: 10px;
+  }
+  .info {
+    font-size: smaller;
+  }
+  .social-icon {
+    width: 34;
+    height: 34;
+  }
+}
+@media (max-width: 358px) {
+  .footer-first {
+    font-size: 12px;
+  }
+}
+@media (max-width: 510px) {
+  .footer-second {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 150px;
+  }
+  .info {
+    grid-row: 2/3;
+    margin: auto;
+    text-align: center;
+  }
+  .social {
+    grid-row: 1/2;
+    margin: auto;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!--Division For Navbar-->
+    <nav id="navbar">
+        <div class="nav-logo-div">
+          <img class="nav-logo" src="logo.png" alt="OnDoor" />
+        </div>
+        <div class="nav-item-div">
+          <div class="nav-link-div"><a class="nav-link" href="index.html">Home</a></div>
+          <div class="nav-link-div">
+            <a class="nav-link" href="#">Track Order</a>
+          </div>
+          <div class="nav-link-div">
+            <a class="nav-link" href="#">E-Receipt</a>
+          </div>
+          <div class="nav-link-div">
+            <a class="nav-link" href="complaint.html">Complain</a>
+          </div>
+          <div class="nav-link-div"><a class="nav-link" href="contact.html">Contact</a></div>
+          <div class="nav-link-div"><a class="nav-link" href="about.html">About</a></div>
+        </div>
+  
+        <div class="nav-btn-div">
+          <button class="nav-btn"><a href="signupindex.html">Sign Up</a></button>
+          <button class="nav-btn"><a href="locate shop.html">Login</a></button>
+          <img
+            onclick="showSideMenu()"
+            class="menu-icon"
+            src="WhiteMenuIcon.png"
+            alt="menu icon"
+          />
+        </div>
+      </nav>
+      <!--Division End For Navbar-->
+  
+      <!--Div for side menu-->
+      <div id="side-menu">
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="index.html">Home</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="#">Track Order</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="#">E-Receipt</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="complaint.html">Complain</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="contact.html">Contact</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="about.html">About</a>
+        </div>
+        <div class="side-menu-item">
+          <button class="side-menu-nav-btn side-menu-nav-link">
+            <a href="signupindex.html">Sign Up</a>
+          </button>
+        </div>
+        <div class="side-menu-item">
+          <button class="side-menu-nav-btn side-menu-nav-link">
+            <a href="indexlogin.html">Login</a>
+          </button>
+        </div>
+        <div class="side-menu-item">
+          <img
+            onclick="hideSideMenu()"
+            class="close-menu-icon side-menu-nav-link"
+            src="close.png"
+            alt="cross image"
+          />
+        </div>
+      </div>
+      <!--Div end for side menu-->
+  
+
+    <div class="local" style="margin: 5%; padding: 10px;">
+        <div class="container" style="border: 2px solid; padding: 10px; ">
+            <div class="card">
+                <div class="card-title">
+                    <b>
+                        <h1 style=" color: red; ">Dispatch Details</h1>
+                    </b>
+                    <br>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+
+                        
+                        <div class="locate">
+
+                            <label for="Product id">Product id:</label>
+                            <input id="product id" type="text" class="sel"  placeholder="Enter product id" style="border-radius: 10px;" required>
+                          
+                            <button  onclick="myFunction()" type="button" class="button" style="border-radius: 10px;">Search</button><br>
+                      
+
+                            <label>Product Name:</label>
+                            <input id="product name" class="sel" type="text" style="border-radius: 10px;"><br>
+                       
+
+
+                            <label>Shop Name</label>
+                            <input id="shop name" type="text" class="sel" style="border-radius: 10px;" required><br>
+
+
+                            <label>Total Price </label>
+                            <input id="total price" type="text" class="sel" style="border-radius: 10px;" required><br>
+                        
+                            <label>Dispatch Status</label>
+                            <input id="dispatch status" type="text" class="sel" style="border-radius: 10px;" required><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Division for foooter-->
+    <div id="footer">
+        <div class="footer-first">
+          <div class="footer-address">
+            <img src="location.png" alt="location icon" />
+            <p>
+              16501 Collins Ave, Sunny Isles <br />
+              Beach, FL 33160, United States <br />
+              hexashop@company.com <br />
+              010-020-0340
+            </p>
+          </div>
+          <div class="footer-links">
+            <p>
+              Shipping <br />
+              Tracking <br />Complaints
+            </p>
+            <p>
+              Contact Us <br />
+              About Us <br />Blogs
+            </p>
+            <p>
+              Terms of Service <br />
+              Privacy Policy <br />Sitemap
+            </p>
+          </div>
+        </div>
+        <div class="footer-second">
+          <div class="info">
+            <p>
+              <b>Order Management System B2T2</b> <br />
+              <span>Copyright @2024 All right Reserved</span>
+            </p>
+          </div>
+          <div class="social">
+            <img class="social-icon" src="x.png" alt="x-twitter" />
+            <img class="social-icon" src="insta.png" alt="instagram" />
+            <img class="social-icon" src="facebook.png" alt="facebook" />
+            <img class="social-icon" src="linkedin.png" alt="linkedin" />
+          </div>
+        </div>
+      </div>
+      <!--Division end for foooter-->
+  
+      <script>
+        const sideMenu = document.getElementById("side-menu");
+        function showSideMenu() {
+          sideMenu.style.display = " block";
+        }
+        function hideSideMenu() {
+          sideMenu.style.display = "none";
+        }
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ShippingRateCalculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ShippingRateCalculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Caslon Text"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+    <!--Division For Navbar-->
+    <nav id="navbar">
+      <div class="nav-logo-div">
+        <img class="nav-logo" src="logo.png" alt="OnDoor" />
+      </div>
+      <div class="nav-item-div">
+        <div class="nav-link-div"><a class="nav-link" href="index.html">Home</a></div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="#">Track Order</a>
+        </div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="#">E-Receipt</a>
+        </div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="complaint.html">Complain</a>
+        </div>
+        <div class="nav-link-div"><a class="nav-link" href="complaint.html">Contact</a></div>
+        <div class="nav-link-div"><a class="nav-link" href="about.html">About</a></div>
+      </div>
+
+      <div class="nav-btn-div">
+        <button class="nav-btn"><a href="signupindex.html">Sign Up</a></button>
+        <button class="nav-btn"><a href="indexlogin.html">Login</a></button>
+        <img
+          onclick="showSideMenu()"
+          class="menu-icon"
+          src="WhiteMenuIcon.png"
+          alt="menu icon"
+        />
+      </div>
+    </nav>
+    <!--Division End For Navbar-->
+
+    <!--Div for side menu-->
+    <div id="side-menu">
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="index.html">Home</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="#">Track Order</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="#">E-Receipt</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="complaint.html">Complain</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="contact.html">Contact</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="about.html">About</a>
+      </div>
+      <div class="side-menu-item">
+        <button class="side-menu-nav-btn side-menu-nav-link">
+          <a href="signupindex.html">Sign Up</a>
+        </button>
+      </div>
+      <div class="side-menu-item">
+        <button class="side-menu-nav-btn side-menu-nav-link">
+          <a href="indexlogin.html">Login</a>
+        </button>
+      </div>
+      <div class="side-menu-item">
+        <img
+          onclick="hideSideMenu()"
+          class="close-menu-icon side-menu-nav-link"
+          src="close.png"
+          alt="cross image"
+        />
+      </div>
+    </div>
+    <!--Div end for side menu-->
+
+
+
+    <!--Div for main content-->
+    <div id="main">
+        <div class="main-heading">
+            <p>Shipping Rate Calculator</p>
+        </div>
+        <div class="sub-heading">
+                <div class="sub-heading-btn1 ">Domestic</div>
+                <div class="sub-heading-btn2 ">International</div>
+        </div>
+        <div id="main-form">
+
+                <div class="item1">
+                    <label class="lbl" for="pickup">Pickup Area Pincode*</label><br>
+                <input type="text" id="pickup" class="input-box" name="pickup are pincode">
+                </div>
+
+                <div class="item2">
+                    <label class="lbl" for="deliver">Delivery Area Pincode*</label><br>
+                    <input type="text" id="delivery" class="input-box" name="delivery are pincode">    
+                </div>
+
+                <div class="item3">
+                    <label for="weight">weight</label><br>
+                    <div class="input3-div">
+                        <input type="text" id="weight" name="weight">
+                        <div class="kg">KG</div>
+                    </div>
+                </div>
+
+                <div class="item4">
+                    <label for="length width height">Dimension</label><br>
+                    <input type="text" id="length" class="inp" name="length">
+                    <input type="text" id="width" class="inp"  name="width">
+                    <input type="text" id="height" class="inp"  name="height">
+                </div>
+
+                <div class="item5">
+                    <img class="ship-img" src="shipcalimg.png" alt="">
+                </div>
+
+
+                <div class="item6">
+                    <label class="lbl" for="prepaid cash">Payment Mode*</label>
+                    <div class="pay-radio-btn">
+                        <input type="radio" id="Prepaid" name="Prepaid" value="prepaid" checked />
+                        <label for="prepaid">Prepaid</label>
+                      </div>
+                    
+                      <div class="pay-radio-btn">
+                        <input type="radio" id="cash" name="cash" value="cash" />
+                        <label for="cash">Cash On Delivery</label>
+                    </div>
+                </div>
+
+                <div class="item7">
+                    <label class="lbl" for="shipment">Shipent Value</label><br>
+                     <input type="text" id="shipment" class="input-box" name="shipment value">
+                </div>
+                
+                <div class="item8">
+                    <button class="cal-btn">Calculate</button>
+                </div>
+
+
+        </div>
+    </div>
+    <!--Div end for main content-->
+</div>
+
+
+    <!--Division for foooter-->
+    <div id="footer">
+      <div class="footer-first">
+        <div class="footer-address">
+          <img src="location.png" alt="location icon" />
+          <p>
+            16501 Collins Ave, Sunny Isles <br />
+            Beach, FL 33160, United States <br />
+            hexashop@company.com <br />
+            010-020-0340
+          </p>
+        </div>
+        <div class="footer-links">
+          <p>
+            Shipping <br />
+            Tracking <br />Complaints
+          </p>
+          <p>
+            Contact Us <br />
+            About Us <br />Blogs
+          </p>
+          <p>
+            Terms of Service <br />
+            Privacy Policy <br />Sitemap
+          </p>
+        </div>
+      </div>
+      <div class="footer-second">
+        <div class="info">
+          <p>
+            <b>Order Management System B2T2</b> <br />
+            <span>Copyright @2024 All right Reserved</span>
+          </p>
+        </div>
+        <div class="social">
+          <img class="social-icon" src="x.png" alt="x-twitter" />
+          <img class="social-icon" src="insta.png" alt="instagram" />
+          <img class="social-icon" src="facebook.png" alt="facebook" />
+          <img class="social-icon" src="linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+    </div>
+    <!--Division end for foooter-->
+
+    <script>
+      const sideMenu = document.getElementById("side-menu");
+      function showSideMenu() {
+        sideMenu.style.display = " block";
+      }
+      function hideSideMenu() {
+        sideMenu.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

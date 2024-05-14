@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Receipt</title>
+    <link rel="stylesheet" href="receipt1.css">
+    <link rel="stylesheet" href="NavbarAndFooter.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Caslon Text"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-logo-div">
+                <img class="nav-logo" src="logo.png" alt="OnDoor" />
+            </div>
+            <div class="nav-item-div">
+                <div class="nav-link-div"><a class="nav-link" href="#">Home</a></div>
+                <div class="nav-link-div">
+                    <a class="nav-link" href="#">Track Order</a>
+                </div>
+                <div class="nav-link-div">
+                    <a class="nav-link" href="#">E-Receipt</a>
+                </div>
+                <div class="nav-link-div">
+                    <a class="nav-link" href="#">Complain</a>
+                </div>
+                <div class="nav-link-div"><a class="nav-link" href="#">Contact</a></div>
+                <div class="nav-link-div"><a class="nav-link" href="#">About</a></div>
+            </div>
+
+            <div class="nav-btn-div">
+                <button class="nav-btn"><a href="#">Sign Up</a></button>
+                <button class="nav-btn"><a href="#">Login</a></button>
+                <img onclick="showSideMenu()" class="menu-icon" src="WhiteMenuIcon.png" alt="menu icon" />
+            </div>
+        </nav>
+        <!--Division End For Navbar-->
+
+        <!--Div for side menu-->
+        <div id="side-menu">
+            <div class="side-menu-item">
+                <a class="nav-link side-menu-nav-link" href="#">Home</a>
+            </div>
+            <div class="side-menu-item">
+                <a class="nav-link side-menu-nav-link" href="#">Track Order</a>
+            </div>
+            <div class="side-menu-item">
+                <a class="nav-link side-menu-nav-link" href="#">E-Receipt</a>
+            </div>
+            <div class="side-menu-item">
+                <a class="nav-link side-menu-nav-link" href="#">Complain</a>
+            </div>
+            <div class="side-menu-item">
+                <a class="nav-link side-menu-nav-link" href="#">Contact</a>
+            </div>
+            <div class="side-menu-item">
+                <a class="nav-link side-menu-nav-link" href="#">About</a>
+            </div>
+            <div class="side-menu-item">
+                <button class="side-menu-nav-btn side-menu-nav-link">
+                    <a href="#">Sign Up</a>
+                </button>
+            </div>
+            <div class="side-menu-item">
+                <button class="side-menu-nav-btn side-menu-nav-link">
+                    <a href="#">Login</a>
+                </button>
+            </div>
+            <div class="side-menu-item">
+                <img onclick="hideSideMenu()" class="close-menu-icon side-menu-nav-link" src="close.png"
+                    alt="cross image" />
+            </div>
+        </div>
+        <!--Div end for side menu-->
+    </header>
+
+    <main>
+        <div class="container">
+
+                <h1>OnDoor</h1>
+                <h2>Receipt</h2>
+
+            <table>
+                <tr>
+                    <td>
+                        <h5>Order id: OD307225790432423000 <br>
+                            Order Date: 23/03/2024<br>
+                            Invoice Date: 23/03/2024<br>
+                            VAT/TIN: 23/03/2024<br>
+                        </h5>
+                    </td>
+
+                    <td>
+                        <h5>Billing Address<br>
+                            16501 Collins Ave, Sunny Isles <br>
+                            Beach, FL 33160, United States <br>
+                            hexashop@company.com <br>
+                            010-020-0340 <br>
+                        </h5>
+                    </td>
+
+                    <td>
+                        <h5>Shipping Address<br>
+                            16501 Collins Ave, Sunny Isles <br>
+                            Beach, FL 33160, United States <br>
+                            hexashop@company.com <br>
+                            010-020-0340 <br>
+                        </h5>
+                    </td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Title</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Smartwatches
+                        FSN: SMWEF36JCZJJ4AMB</td>
+                    <td>Motorola 360 2nd Gen
+                        46mm for men</td>
+                    <td>1</td>
+                    <td>15,700</td>
+                    <td>765</td>
+                    <td>16,465</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Total</td>
+                    <td>15,700</td>
+                    <td>765</td>
+                    <td>16,465</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Grand Total</td>
+                    <td>16,465</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+
+    <!--Division for foooter-->
+    <footer>
+        <div id="footer">
+            <div class="footer-first">
+                <div class="footer-address">
+                    <img src="location.png" alt="location icon" />
+                    <p>
+                        16501 Collins Ave, Sunny Isles <br />
+                        Beach, FL 33160, United States <br />
+                        hexashop@company.com <br />
+                        010-020-0340
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <p>
+                        Shipping <br />
+                        Tracking <br />Complaints
+                    </p>
+                    <p>
+                        Contact Us <br />
+                        About Us <br />Blogs
+                    </p>
+                    <p>
+                        Terms of Service <br />
+                        Privacy Policy <br />Sitemap
+                    </p>
+                </div>
+            </div>
+            <div class="footer-second">
+                <div class="info">
+                    <p>
+                        <b>Order Management System B2T2</b> <br />
+                        <span>Copyright @2024 All right Reserved</span>
+                    </p>
+                </div>
+                <div class="social">
+                    <img class="social-icon" src="x.png" alt="x-twitter" />
+                    <img class="social-icon" src="insta.png" alt="instagram" />
+                    <img class="social-icon" src="facebook.png" alt="facebook" />
+                    <img class="social-icon" src="linkedin.png" alt="linkedin" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Division end for foooter-->
+
+    <script>
+        const sideMenu = document.getElementById("side-menu");
+        function showSideMenu() {
+            sideMenu.style.display = " block";
+        }
+        function hideSideMenu() {
+            sideMenu.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

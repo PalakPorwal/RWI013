@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up Form</title>
+<link rel="stylesheet" type="text/css" href="login.css">
+<link rel="stylesheet" type="text/css" href="NavbarAndFooter.css">
+<link href='https://fonts.googleapis.com/css?family=Libre Caslon Text' rel='stylesheet'>
+    
+
+
+</head>
+<body>
+  <!-- navbar -->
+<nav id="navbar">
+  <div class="nav-logo-div">
+    <img class="nav-logo" src="logo.png" alt="OnDoor" />
+  </div>
+  <div class="nav-item-div">
+    <div class="nav-link-div"><a class="nav-link" href="index.html">Home</a></div>
+    <div class="nav-link-div">
+      <a class="nav-link" href="#">Track Order</a>
+    </div>
+    <div class="nav-link-div">
+      <a class="nav-link" href="#">E-Receipt</a>
+    </div>
+    <div class="nav-link-div">
+      <a class="nav-link" href="complaint.html">Complaint</a>
+    </div>
+    <div class="nav-link-div"><a class="nav-link" href="contact.html">Contact</a></div>
+    <div class="nav-link-div"><a class="nav-link" href="about.html">About</a></div>
+  </div>
+
+  <div class="nav-btn-div">
+    <button class="nav-btn"><a href="signupindex.html">Sign Up</a></button>
+    <button class="nav-btn"><a href="indexlogin.html">Login</a></button>
+    <img onclick="showSideMenu()" class="menu-icon" src="WhiteMenuIcon.png" alt="menu icon" />
+  </div>
+</nav>
+<!-- login -->
+<div class="signup-container">
+  <h2>Login to your Account</h2><br><br>
+  <form action="index.html" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+    
+    <br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+    <br>
+    <label><input type="checkbox" name="agree" required> Remeber Me </label>
+    <br>
+    <input type="submit" value="Login">
+    <br>
+  </form>
+  
+</div>
+
+<!-- footer -->
+<div id="footer">
+  <div class="footer-first">
+    <div class="footer-address">
+      <img src="location.png" alt="location icon" />
+      <p>
+        16501 Collins Ave, Sunny Isles <br />
+        Beach, FL 33160, United States <br />
+        hexashop@company.com <br />
+        010-020-0340
+      </p>
+    </div>
+    <div class="footer-links">
+      <p>
+        Shipping <br />
+        Tracking <br />Complaints
+      </p>
+      <p>
+        Contact Us <br />
+        About Us <br />Blogs
+      </p>
+      <p>
+        Terms of Service <br />
+        Privacy Policy <br />Sitemap
+      </p>
+    </div>
+  </div>
+  <div class="footer-second">
+    <div class="info">
+      <p>
+        <b>Order Management System B2T2</b> <br />
+        <span>Copyright @2024 All right Reserved</span>
+      </p>
+    </div>
+    <div class="social">
+      <img class="social-icon" src="x.png" alt="x-twitter" />
+      <img class="social-icon" src="insta.png" alt="instagram" />
+      <img class="social-icon" src="facebook.png" alt="facebook" />
+      <img class="social-icon" src="linkedin.png" alt="linkedin" />
+    </div>
+  </div>
+</div>
+<script>
+  const sideMenu = document.getElementById("side-menu");
+  function showSideMenu() {
+    sideMenu.style.display = " block";
+  }
+  function hideSideMenu() {
+    sideMenu.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

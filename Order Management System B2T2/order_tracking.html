@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <link rel="stylesheet" href="order_tracking.css">
+    <link rel="stylesheet" href="NavbarAndFooter.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre Caslon Text"
+      rel="stylesheet"
+    />
+</head>
+
+<body class="body">
+
+    <header><nav id="navbar">
+        <div class="nav-logo-div">
+          <img class="nav-logo" src="logo.png" alt="OnDoor" />
+        </div>
+        <div class="nav-item-div">
+          <div class="nav-link-div"><a class="nav-link" href="index.html">Home</a></div>
+          <div class="nav-link-div">
+            <a class="nav-link" href="order_tracking.html">Track Order</a>
+          </div>
+          <div class="nav-link-div">
+            <a class="nav-link" href="receipt.html">E-Receipt</a>
+          </div>
+          <div class="nav-link-div">
+            <a class="nav-link" href="complaint.html">Complaint</a>
+          </div>
+          <div class="nav-link-div"><a class="nav-link" href="contact.html">Contact</a></div>
+          <div class="nav-link-div"><a class="nav-link" href="about.html">About</a></div>
+        </div>
+  
+        <div class="nav-btn-div">
+          <button class="nav-btn"><a href="signupindex.html">Sign Up</a></button>
+          <button class="nav-btn"><a href="indexlogin.html">Login</a></button>
+          <img
+            onclick="showSideMenu()"
+            class="menu-icon"
+            src="WhiteMenuIcon.png"
+            alt="menu icon"
+          />
+        </div>
+      </nav>
+      <!--Division End For Navbar-->
+  
+      <!--Div for side menu-->
+      <div id="side-menu">
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="index.html">Home</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="order_tracking.html">Track Order</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="receipt.html">E-Receipt</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="complaint.html">Complaint</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="contact.html">Contact</a>
+        </div>
+        <div class="side-menu-item">
+          <a class="nav-link side-menu-nav-link" href="about.html">About</a>
+        </div>
+        <div class="side-menu-item">
+          <button class="side-menu-nav-btn side-menu-nav-link">
+            <a href="signupindex.html">Sign Up</a>
+          </button>
+        </div>
+        <div class="side-menu-item">
+          <button class="side-menu-nav-btn side-menu-nav-link">
+            <a href="indexlogin.html">Login</a>
+          </button>
+        </div>
+        <div class="side-menu-item">
+          <img
+            onclick="hideSideMenu()"
+            class="close-menu-icon side-menu-nav-link"
+            src="close.png"
+            alt="cross image"
+          />
+        </div>
+      </div>
+      <!--Div end for side menu-->
+  
+    </header>
+    <main>
+        <h1>Order Tracking</h1>
+        <p class="pp">*Indicate a required field</p>
+        <table class="order-table">
+            <tr>
+                <td class="order-details">
+                    Order No: <span class="order-number">RD72361378436IN</span>
+                    <button class="track-button">Track</button>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Booked At</td>
+                <td class="no-space">Booked On</td>
+                <td>Pincode</td>
+                <td>Tariff</td>
+                <td>Article Type</td>
+                <td>Delivery Location</td>
+                <td>Delivery Confirmed On</td>
+            </tr>
+            <tr>
+                <td>Mhow S.O</td>
+                <td>28/03/2024 11:32:57</td>
+                <td>683106</td>
+                <td>94.40</td>
+                <td>Thaikkattukara SO</td>
+                <td>Indore</td>
+                <td>03/04/2024 13:36:34</td>
+            </tr>
+            <tr>
+                <td colspan="7" class="event-details">Event Detail For: EI7636872IN Current Status: Item Delivered
+                    (Address)</td>
+            </tr>
+            <tr>
+                <td>Date</td>
+                <td>Time</td>
+                <td>Office</td>
+                <td>Event</td>
+            </tr>
+            <tr>
+                <td>03/04/2024</td>
+                <td>13:36:34</td>
+                <td>Indore</td>
+                <td>Item Deliver</td>
+            </tr>
+            <tr>
+                <td>03/04/2024</td>
+                <td>13:36:34</td>
+                <td>Indore</td>
+                <td>Item Deliver</td>
+            </tr>
+            <tr>
+                <td>03/04/2024</td>
+                <td>13:36:34</td>
+                <td>Indore</td>
+                <td>Item Deliver</td>
+            </tr>
+            <tr>
+                <td>03/04/2024</td>
+                <td>13:36:34</td>
+                <td>Indore</td>
+                <td>Item Deliver</td>
+            </tr>
+            <tr>
+                <td>03/04/2024</td>
+                <td>13:36:34</td>
+                <td>Indore</td>
+                <td>Item Deliver</td>
+            </tr>
+
+        </table>
+    </main>
+
+    <footer><!--Division for foooter-->
+        <div id="footer">
+          <div class="footer-first">
+            <div class="footer-address">
+              <img src="location.png" alt="location icon" />
+              <p>
+                16501 Collins Ave, Sunny Isles <br />
+                Beach, FL 33160, United States <br />
+                hexashop@company.com <br />
+                010-020-0340
+              </p>
+            </div>
+            <div class="footer-links">
+              <p>
+                Shipping <br />
+                Tracking <br />Complaints
+              </p>
+              <p>
+                Contact Us <br />
+                About Us <br />Blogs
+              </p>
+              <p>
+                Terms of Service <br />
+                Privacy Policy <br />Sitemap
+              </p>
+            </div>
+          </div>
+          <div class="footer-second">
+            <div class="info">
+              <p>
+                <b>Order Management System B2T2</b> <br />
+                <span>Copyright @2024 All right Reserved</span>
+              </p>
+            </div>
+            <div class="social">
+              <img class="social-icon" src="x.png" alt="x-twitter" />
+              <img class="social-icon" src="insta.png" alt="instagram" />
+              <img class="social-icon" src="facebook.png" alt="facebook" />
+              <img class="social-icon" src="linkedin.png" alt="linkedin" />
+            </div>
+          </div>
+        </div>
+        <!--Division end for foooter-->
+    </footer>
+
+    <script>
+        const sideMenu = document.getElementById("side-menu");
+        function showSideMenu() {
+          sideMenu.style.display = " block";
+        }
+        function hideSideMenu() {
+          sideMenu.style.display = "none";
+        }
+      </script>
+</body>
+
+</html>
+
+
+
+
+
+

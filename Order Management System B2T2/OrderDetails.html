@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OrderDetails</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="OrderDetails.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre Caslon Text"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    
+    <!--Division For Navbar-->
+    <nav id="navbar">
+      <div class="nav-logo-div">
+        <img class="nav-logo" src="logo.png" alt="OnDoor" />
+      </div>
+      <div class="nav-item-div">
+        <div class="nav-link-div"><a class="nav-link" href="index.html">Home</a></div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="#">Track Order</a>
+        </div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="#">E-Receipt</a>
+        </div>
+        <div class="nav-link-div">
+          <a class="nav-link" href="complaint.html">Complain</a>
+        </div>
+        <div class="nav-link-div"><a class="nav-link" href="contact.html">Contact</a></div>
+        <div class="nav-link-div"><a class="nav-link" href="about.html">About</a></div>
+      </div>
+
+      <div class="nav-btn-div">
+        <button class="nav-btn"><a href="signupindex.html">Sign Up</a></button>
+        <button class="nav-btn"><a href="indexlogin.html">Login</a></button>
+        <img
+          onclick="showSideMenu()"
+          class="menu-icon"
+          src="WhiteMenuIcon.png"
+          alt="menu icon"
+        />
+      </div>
+    </nav>
+    <!--Division End For Navbar-->
+
+    <!--Div for side menu-->
+    <div id="side-menu">
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="index.html">Home</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="#">Track Order</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="#">E-Receipt</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="complaint.html">Complain</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="contact.html">Contact</a>
+      </div>
+      <div class="side-menu-item">
+        <a class="nav-link side-menu-nav-link" href="about.html">About</a>
+      </div>
+      <div class="side-menu-item">
+        <button class="side-menu-nav-btn side-menu-nav-link">
+          <a href="signupindex.html">Sign Up</a>
+        </button>
+      </div>
+      <div class="side-menu-item">
+        <button class="side-menu-nav-btn side-menu-nav-link">
+          <a href="indexlogin.html">Login</a>
+        </button>
+      </div>
+      <div class="side-menu-item">
+        <img
+          onclick="hideSideMenu()"
+          class="close-menu-icon side-menu-nav-link"
+          src="close.png"
+          alt="cross image"
+        />
+      </div>
+    </div>
+    <!--Div end for side menu-->
+
+
+
+    <!--Div for main content-->
+    <div id="main">
+        <div class="main-heading">
+            <p><b>Order Details</b></p>
+        </div>
+
+            <div id="main-form-1">
+                <div class="item1 itm">
+                    <label for="orderid">Order Id</label><br>
+                    <input type="text" id="orderid" class="input-box">
+                </div>
+                <div class="item2 itm">
+                    <label for="orderdate">Order Date</label><br>
+                    <input type="date" id="orderdate" class="input-box">
+                </div>
+                <div class="item3 itm">
+                    <label for="ordertime">Order Time</label><br>
+                    <input type="time" id="ordertime" class="input-box">
+                </div>
+                <div class="item4 itm">
+                    <label for="orderstatus">Order Status</label><br>
+                    <input type="text" id="orderstatus" class="input-box">
+                </div>
+                <div class="item5 itm">
+                    <label for="customername">Customer Name</label><br>
+                    <input type="text" name="customername" id="customername" class="input-box">
+                </div>
+                <div class="item6 itm">
+                    <label for="customeremail">Customer E-mail</label><br>
+                    <input type="email" name="customeremail" id="customeremail" class="input-box">
+                </div>
+                <div class="item7 itm">
+                    <label for="customerno">Customer Phone No.</label><br>
+                    <input type="text" id="customerno" class="input-box">
+                </div>
+                <div class="item8 itm">
+                    <label for="billing">Billing Address</label><br>
+                    <input type="text" id="billing" class="lg-input-box">
+                </div>
+                <div class="item9 itm">
+                    <label for="shipping">Shipping Address</label><br>
+                    <input type="text" id="shipping" class="lg-input-box">
+                </div>
+            </div>
+
+            
+            <div id="main-form-2">
+                <div class="item10 itm">
+                    <label for="productname">Product Name</label><br>
+                    <input type="text" id="productname" class="input-box">
+                </div>
+                <div class="item11 itm">
+                    <label for="uploadbtn">Product Image</label><br>
+                    <button id="uploadbtn">Upload Image</button>
+                </div>
+                <div class="item12 itm">
+                    <label for="image">Product Image Preview</label><br>
+                    <input type="text" id="image" class="input-box">
+                </div>
+                <div class="item13 itm">
+                    <label for="pruductquantity">Product Quantity</label><br>
+                    <input type="text" id="productquantity" class="input-box">
+                </div>
+                <div class="item14 itm">
+                    <label for="addmore"></label><br>
+                    <button id="addmore">Add More Product</button>
+                </div>
+            </div>
+
+
+            <div id="main-form-3">
+                <div class="item15 itm">
+                    <label for="subtotal">Subtotal</label><br>
+                    <input type="text" id="subtotal" class="input-box">
+                </div>
+                <div class="item16 itm">
+                    <label for="shippingcost">Shipping Cost</label><br>
+                    <input type="text" id="shippingcost" class="input-box">
+                </div>
+                <div class="item17 itm">
+                    <label for="taxes">Taxes</label><br>
+                    <input type="text" id="taxes" class="input-box">
+                </div>
+                <div class="item18 itm">
+                    <label for="discounts">discounts</label><br>
+                    <input type="text" id="discounts" class="input-box">
+                </div>
+                <div class="item19 itm">
+                    <label for="ordertotal">Order Total</label><br>
+                    <input type="text" id="ordertotal" class="input-box">
+                </div>
+                <div class="item20 itm">
+                    <label for="dbtn"></label><br>
+                    <button class="dbtn">Save</button>
+                    <button class="dbtn">Print</button>
+                </div>
+            </div>
+
+        
+    </div>
+    <!--Div end for main content-->
+
+
+
+    <!--Division for foooter-->
+    <div id="footer">
+      <div class="footer-first">
+        <div class="footer-address">
+          <img src="location.png" alt="location icon" />
+          <p>
+            16501 Collins Ave, Sunny Isles <br />
+            Beach, FL 33160, United States <br />
+            hexashop@company.com <br />
+            010-020-0340
+          </p>
+        </div>
+        <div class="footer-links">
+          <p>
+            Shipping <br />
+            Tracking <br />Complaints
+          </p>
+          <p>
+            Contact Us <br />
+            About Us <br />Blogs
+          </p>
+          <p>
+            Terms of Service <br />
+            Privacy Policy <br />Sitemap
+          </p>
+        </div>
+      </div>
+      <div class="footer-second">
+        <div class="info">
+          <p>
+            <b>Order Management System B2T2</b> <br />
+            <span>Copyright @2024 All right Reserved</span>
+          </p>
+        </div>
+        <div class="social">
+          <img class="social-icon" src="x.png" alt="x-twitter" />
+          <img class="social-icon" src="insta.png" alt="instagram" />
+          <img class="social-icon" src="facebook.png" alt="facebook" />
+          <img class="social-icon" src="linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+    </div>
+    <!--Division end for foooter-->
+
+    <script>
+      const sideMenu = document.getElementById("side-menu");
+      function showSideMenu() {
+        sideMenu.style.display = " block";
+      }
+      function hideSideMenu() {
+        sideMenu.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

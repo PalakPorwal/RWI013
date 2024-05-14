@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="complaint.css" />
+  <!-- <link rel="stylesheet" href="NavbarAndFooter.css" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Libre Caslon Text" rel="stylesheet" />
+  <title>Complaint Page</title>
+</head>
+
+<body>
+  <!--Division For Navbar-->
+  <nav id="navbar">
+    <div class="nav-logo-div">
+      <img class="nav-logo" src="logo.png" alt="OnDoor" />
+    </div>
+    <div class="nav-item-div">
+      <div class="nav-link-div"><a class="nav-link" href="index.html">Home</a></div>
+      <div class="nav-link-div">
+        <a class="nav-link" href="#">Track Order</a>
+      </div>
+      <div class="nav-link-div">
+        <a class="nav-link" href="#">E-Receipt</a>
+      </div>
+      <div class="nav-link-div">
+        <a class="nav-link" href="complaint.html">Complain</a>
+      </div>
+      <div class="nav-link-div"><a class="nav-link" href="contact.html">Contact</a></div>
+      <div class="nav-link-div"><a class="nav-link" href="about.html">About</a></div>
+    </div>
+
+    <div class="nav-btn-div">
+      <button class="nav-btn"><a href="signupindex.html">Sign Up</a></button>
+      <button class="nav-btn"><a href="indexlogin.html">Login</a></button>
+      <img onclick="showSideMenu()" class="menu-icon" src="WhiteMenuIcon.png" alt="menu icon" />
+    </div>
+  </nav>
+  <!--Division End For Navbar-->
+
+  <!--Div for side menu-->
+  <div id="side-menu">
+    <div class="side-menu-item">
+      <a class="nav-link side-menu-nav-link" href="index.html">Home</a>
+    </div>
+    <div class="side-menu-item">
+      <a class="nav-link side-menu-nav-link" href="#">Track Order</a>
+    </div>
+    <div class="side-menu-item">
+      <a class="nav-link side-menu-nav-link" href="#">E-Receipt</a>
+    </div>
+    <div class="side-menu-item">
+      <a class="nav-link side-menu-nav-link" href="complaint.html">Complain</a>
+    </div>
+    <div class="side-menu-item">
+      <a class="nav-link side-menu-nav-link" href="contact.html">Contact</a>
+    </div>
+    <div class="side-menu-item">
+      <a class="nav-link side-menu-nav-link" href="about.html">About</a>
+    </div>
+    <div class="side-menu-item">
+      <button class="side-menu-nav-btn side-menu-nav-link">
+        <a href="signupindex.html">Sign Up</a>
+      </button>
+    </div>
+    <div class="side-menu-item">
+      <button class="side-menu-nav-btn side-menu-nav-link">
+        <a href="indexlogin.html">Login</a>
+      </button>
+    </div>
+    <div class="side-menu-item">
+      <img onclick="hideSideMenu()" class="close-menu-icon side-menu-nav-link" src="close.png" alt="cross image" />
+    </div>
+  </div>
+  <!--Div end for side menu-->
+
+  <div class="main-div">
+    <div class="heading-text">
+      <p id="register">Register a Complaint </p>
+    </div>
+    <div class="complaint-form">
+      <div class="text">
+        <p>Indicates as Required Field</p>
+      </div>
+      <form action="abc.com" method="post">
+        <div class="form-row">
+          <div class="contact-details">
+            <label for="category">Category:</label>
+            <input type="text" id="category" required>
+            <label for="service">Service:</label>
+            <input type="text" id="service" required>
+            <label for="transactionNo">Transaction No.:</label>
+            <input type="text" id="transactionNo" required>
+            <label for="type">Type:</label>
+            <input type="text" id="type" required>
+          </div>
+          <div class="transaction-details">
+            <label for="transactionDate">Transaction Date:</label>
+            <input type="date" id="transactionDate">
+            <label for="bookingOffice">Booking Office Detail:</label>
+            <input type="text" id="bookingOffice">
+            <label for="description">Description:</label>
+            <input type="text" id="description">
+          </div>
+        </div>
+      </form>
+      <div class="form-container">
+        <div class="text">
+          <p>Customer Details </p>
+        </div>
+        <form name="CustomerDetails">
+          <div class="form-field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" />
+          </div>
+          <div class="form-field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="form-field">
+            <label for="address">Address</label>
+            <input type="text" id="address">
+          </div>
+          <div class="form-field">
+            <label for="country">Country</label>
+            <input type="text" id="country">
+          </div>
+          <div class="form-field">
+            <label for="pinCode">Pin Code</label>
+            <input type="number" id="pinCode">
+          </div>
+          <div class="form-field">
+            <label for="city">City/District</label>
+            <input type="text" id="city">
+          </div>
+          <div class="form-field">
+            <label for="state">State/Union Territory</label>
+            <input type="text" id="state">
+          </div>
+          <div class="form-field">
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile">
+          </div>
+          <div class="form-field">
+            <label for="supportingDocs">Upload Supporting Documents</label>
+            <input type="file" id="supportingDocs"><button id="upload">Upload</button>
+          </div>
+          <div class="form-field">
+            <label for="firstNumber">Enter First Number</label>
+            <input type="number" id="firstNumber">
+          </div>
+          <div class="form-buttons">
+            <button type="submit" id="send-btn">Send</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+            <button type="reset" id="reset-btn">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Division for foooter-->
+    <div id="footer">
+      <div class="footer-first">
+        <div class="footer-address">
+          <img src="img/location.png" alt="location icon" />
+          <p>
+            16501 Collins Ave, Sunny Isles <br />
+            Beach, FL 33160, United States <br />
+            hexashop@company.com <br />
+            010-020-0340
+          </p>
+        </div>
+        <div class="footer-links">
+          <p>
+            Shipping <br />
+            Tracking <br />Complaints
+          </p>
+          <p>
+            Contact Us <br />
+            About Us <br />Blogs
+          </p>
+          <p>
+            Terms of Service <br />
+            Privacy Policy <br />Sitemap
+          </p>
+        </div>
+      </div>
+      <div class="footer-second">
+        <div class="info">
+          <p>
+            <b>Order Management System B2T2</b> <br />
+            <span>Copyright @2024 All right Reserved</span>
+          </p>
+        </div>
+        <div class="social">
+          <img class="social-icon" src="img/x.png" alt="x-twitter" />
+          <img class="social-icon" src="img/insta.png" alt="instagram" />
+          <img class="social-icon" src="img/facebook.png" alt="facebook" />
+          <img class="social-icon" src="img/linkedin.png" alt="linkedin" />
+        </div>
+      </div>
+    </div>
+    <!--Division end for foooter-->
+
+    <script>
+      const sideMenu = document.getElementById("side-menu");
+      function showSideMenu() {
+        sideMenu.style.display = " block";
+      }
+      function hideSideMenu() {
+        sideMenu.style.display = "none";
+      }
+    </script>
+</body>
+
+</html>
